@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/tan_background"
+    tools:context="org.nicehiro.intent.ActivityA">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity A"
+        android:textSize="44sp"
+        android:padding="16dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        style="@style/CategoryStyle"
+        android:text="GoTo B"
+        android:onClick="startActivityB"/>
+    <Button
+        style="@style/CategoryStyle"
+        android:text="GoTo B For Result"
+        android:onClick="startActivityBForResult"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

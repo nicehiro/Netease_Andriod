@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="Activity C"
+            android:textSize="44sp" />
+
+        <Button
+            style="@style/CategoryStyle"
+            android:text="Share Text Content"
+            android:onClick="shareTextContent"/>
+
+        <Button
+            style="@style/CategoryStyle"
+            android:text="Make Call"
+            android:onClick="markCall" />
+
+        <Button
+            style="@style/CategoryStyle"
+            android:text="Call 17826856902"
+            android:onClick="callNum"/>
+
+        <Button
+            style="@style/CategoryStyle"
+            android:text="GoTo B"
+            android:onClick="startActivityB"/>
+
+        <Button
+            style="@style/CategoryStyle"
+            android:text="GoTo C"
+            android:onClick="startActivityC"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"/>
+</RelativeLayout>
