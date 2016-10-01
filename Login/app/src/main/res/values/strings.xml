@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoginTest</string>
+    <string name="hint">Please Input Your UserName</string>
+</resources>

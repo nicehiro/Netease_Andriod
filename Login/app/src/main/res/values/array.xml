@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="userIdSuffix">
+        <item>\@163.com</item>
+        <item>\@gmail.com</item>
+        <item>\@qq.com</item>
+        <item>\@sina.com</item>
+    </string-array>
+</resources>
