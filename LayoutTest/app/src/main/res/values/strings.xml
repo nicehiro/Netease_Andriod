@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LayoutTest</string>
+    <string name="introduce">You can click differernt color to see different work</string>
+    <string name="task1">show a gallary</string>
+    <string name="task2">show phone interface</string>
+    <string name="task3">nothing to show</string>
+    <string name="nothing">aha, you are a lucky dog! Give you see my selfie</string>
+    <string name="says"></string>
+</resources>
