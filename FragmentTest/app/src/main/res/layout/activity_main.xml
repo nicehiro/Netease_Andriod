@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="org.nicehiro.fragmenttest.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment"
+        android:textSize="36sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="casual"
+        android:padding="16dp"
+        android:textColor="@color/headColor"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="Make Fragment"
+        android:background="#4E342E"
+        android:id="@+id/make_fragment"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="Make Fragment With arg"
+        android:background="#00E5FF"
+        android:id="@+id/make_fragment_with_arg"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="Make Fragment with state"
+        android:background="#448AFF"
+        android:id="@+id/make_fragment_with_state"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="Make Fragment with trans"
+        android:background="#D500F9"
+        android:id="@+id/make_fragment_with_trans"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="Make Fragment with comm"
+        android:background="#FF1744"
+        android:id="@+id/make_fragment_with_comm"/>
+</LinearLayout>
