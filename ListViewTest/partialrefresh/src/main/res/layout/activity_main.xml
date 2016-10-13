@@ -15,16 +15,16 @@
         android:gravity="top"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/add_message"
+        <EditText
+            android:id="@+id/modify_position"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="add message"/>
+            android:layout_marginRight="16dp"/>
         <Button
-            android:id="@+id/delete_message"
+            android:id="@+id/modify_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="del message" />
+            android:text="modify message" />
     </LinearLayout>
 
     <ListView

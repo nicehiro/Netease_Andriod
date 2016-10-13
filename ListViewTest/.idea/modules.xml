@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ListViewTest.iml" filepath="$PROJECT_DIR$/ListViewTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/headerfooterempty/headerfooterempty.iml" filepath="$PROJECT_DIR$/headerfooterempty/headerfooterempty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/partialrefresh/partialrefresh.iml" filepath="$PROJECT_DIR$/partialrefresh/partialrefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewholder/viewholder.iml" filepath="$PROJECT_DIR$/viewholder/viewholder.iml" />
     </modules>
   </component>
