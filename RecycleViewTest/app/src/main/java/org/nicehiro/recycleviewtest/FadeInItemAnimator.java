@@ -2,6 +2,7 @@ package org.nicehiro.recycleviewtest;
 
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorCompat;
+import android.support.v4.view.ViewPropertyAnimatorListener;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SimpleItemAnimator;
 import android.view.View;
@@ -49,21 +50,75 @@ public class FadeInItemAnimator extends SimpleItemAnimator {
 
             View view = viewHolder.itemView;
             final ViewPropertyAnimatorCompat animatorCompat = ViewCompat.animate(view);
+
+            animatorCompat.alpha(1).setDuration(1000).setListener(new ViewPropertyAnimatorListener() {
+                @Override
+                public void onAnimationStart(View view) {
+
+                }
+
+                @Override
+                public void onAnimationEnd(View view) {
+                    animatorCompat.setListener(null);
+                    ViewCompat.setAlpha(view, 1);
+                    dispatchAddFinished(viewHolder);
+                    addAnimationViewHolderList.remove(viewHolder);
+
+                    if (!isRunning()) {
+                        dispatchAnimationsFinished();
+                    }
+                }
+
+                @Override
+                public void onAnimationCancel(View view) {
+
+                }
+            }).start();
         }
+
+        pendingAddViewHolderList.clear();
     }
 
     @Override
     public void endAnimation(RecyclerView.ViewHolder item) {
+        View view = item.itemView;
+        ViewCompat.animate(view).cancel();
 
+        for (int i = 0; i < pendingAddViewHolderList.size(); i++) {
+            RecyclerView.ViewHolder viewHolder = pendingAddViewHolderList.get(i);
+            if (viewHolder == item) {
+                pendingAddViewHolderList.remove(i);
+                ViewCompat.setAlpha(view, 1);
+                dispatchAddFinished(item);
+            }
+        }
+
+        if (!isRunning()) {
+            dispatchAnimationsFinished();
+        }
     }
 
     @Override
     public void endAnimations() {
+        for (int i = 0; i < pendingAddViewHolderList.size(); i++) {
+            RecyclerView.ViewHolder viewHolder = pendingAddViewHolderList.get(i);
+            View view = viewHolder.itemView;
 
+            pendingAddViewHolderList.remove(i);
+            ViewCompat.setAlpha(view, 1);
+            dispatchAddFinished(viewHolder);
+        }
+
+        for (int i = 0; i < addAnimationViewHolderList.size(); i++) {
+            RecyclerView.ViewHolder viewHolder = addAnimationViewHolderList.get(i);
+            View view = viewHolder.itemView;
+            ViewCompat.animate(view).cancel();
+        }
     }
 
     @Override
     public boolean isRunning() {
-        return false;
+        return !pendingAddViewHolderList.isEmpty()
+                || !addAnimationViewHolderList.isEmpty();
     }
 }

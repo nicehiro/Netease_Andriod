@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        List<Message> messageList = new ArrayList<>();
+        final List<Message> messageList = new ArrayList<>();
         String time = Calendar.getInstance().getTime().toLocaleString();
 
         for (int i = 0; i < 100; i++) {
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        MessageAdapter messageAdapter = new MessageAdapter(messageList);
+        final MessageAdapter messageAdapter = new MessageAdapter(messageList);
 
         recyclerView.setAdapter(messageAdapter);
 
@@ -104,5 +104,24 @@ public class MainActivity extends AppCompatActivity {
                 outRect.bottom += 10;
             }
         });
+
+        findViewById(R.id.add_message).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String time = Calendar.getInstance().getTime().toLocaleString();
+
+                int index = messageList.size();
+
+                messageList.add(new TextMessage(
+                        R.drawable.icon_contact,
+                        time,
+                        "I'm the text message" + index
+                ));
+
+                messageAdapter.notifyItemChanged(1);
+            }
+        });
+
+        recyclerView.setItemAnimator(new FadeInItemAnimator());
     }
 }
