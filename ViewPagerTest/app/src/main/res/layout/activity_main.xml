@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#827717"
+    tools:context="org.nicehiro.viewpagertest.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewPager"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:textSize="36sp"
+        android:textColor="@color/yello_light"/>
+
+    <Button
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#795548"
+        android:text="Run"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:id="@+id/view_pager_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#795548"
+        android:text="Run with fragment"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:fontFamily="casual"/>
+</LinearLayout>
