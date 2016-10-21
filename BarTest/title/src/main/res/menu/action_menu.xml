@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Search"
+        android:icon="@drawable/actionbar_search_dark_icon"
+        android:id="@+id/search_icon"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView">
+    </item>
+
+    <item
+        android:title="Plus"
+        android:icon="@drawable/actionbar_plus_icon_normal"
+        app:showAsAction="ifRoom"
+        android:id="@+id/plus"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider">
+    </item>
+
+    <item
+        android:title="More"
+        android:icon="@drawable/actionbar_plus_icon_normal"
+        app:showAsAction="always"
+        android:id="@+id/more"
+        app:actionProviderClass="org.nicehiro.title.PlusProvider">
+    </item>
+</menu>
