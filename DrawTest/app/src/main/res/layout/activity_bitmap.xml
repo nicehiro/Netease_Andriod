@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BitmapActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/shape_example"
+        android:scaleType="fitXY"/>
+
+    <Button
+        android:id="@+id/bitmap_decode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="decode" />
+
+    <Button
+        android:id="@+id/bitmap_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="selector" />
+
+    <Button
+        android:id="@+id/bitmap_level_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="level_list"/>
+
+</LinearLayout>

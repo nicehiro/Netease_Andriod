@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.src_scale).setOnClickListener(this);
         findViewById(R.id.matrix).setOnClickListener(this);
         findViewById(R.id.tint).setOnClickListener(this);
+        findViewById(R.id.bitmap).setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tint:
                 startActivity(new Intent(this, TintActivity.class));
+                break;
+            case R.id.bitmap:
+                startActivity(new Intent(this, BitmapActivity.class));
                 break;
         }
     }

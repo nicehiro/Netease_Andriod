@@ -21,6 +21,8 @@
         <activity android:name=".MatrixActivity"/>
 
         <activity android:name=".TintActivity"/>
+        
+        <activity android:name=".BitmapActivity"/>
     </application>
 
 </manifest>
