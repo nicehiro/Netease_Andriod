@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.nicehiro.drawtest.MainActivity">
+
+    <Button
+        android:id="@+id/src_scale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="src&amp;scaletype"
+        android:textSize="16sp"
+        android:fontFamily="casual" />
+    <Button
+        android:id="@+id/matrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="matrix"
+        android:textSize="16sp"
+        android:fontFamily="casual" />
+    <Button
+        android:id="@+id/tint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tint"
+        android:textSize="16sp"
+        android:fontFamily="casual" />
+
+</LinearLayout>

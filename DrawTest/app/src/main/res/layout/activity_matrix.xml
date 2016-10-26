@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatrixActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/full_with"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="full"/>
+
+        <Button
+            android:id="@+id/rotate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="rotate"/>
+
+        <Button
+            android:id="@+id/concat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="concat"/>
+
+        <Button
+            android:id="@+id/concat2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="concat2"/>
+
+        <Button
+            android:id="@+id/brief_concat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="simple"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/image_view_tiger"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/tiger"
+        android:background="#007777"/>
+
+</LinearLayout>

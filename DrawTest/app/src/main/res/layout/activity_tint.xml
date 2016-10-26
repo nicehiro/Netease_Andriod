@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TintActivity">
+
+    <ImageView
+        android:id="@+id/image_lenna_tint"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/lenna"
+        android:tint="#A01E88E5"/>
+
+    <ImageView
+        android:id="@+id/image_alpha_tint"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:tint="#A01E88E5"/>
+
+</LinearLayout>
