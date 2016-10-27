@@ -28,6 +28,7 @@ public class BitmapDecoder {
         String path = Environment.getExternalStorageDirectory().getPath();
         Bitmap bitmap = BitmapFactory.decodeFile(path + "/tiger.jpg", options);
         log(context, "bitmap in memory: " + bitmap.getByteCount());
+
         return bitmap;
     }
 

@@ -37,14 +37,14 @@ public class SrcAndScaleTypeActivity extends AppCompatActivity implements View.O
 
 //        setFromeResource();
 //        setByDrawable();
-//        setFromPath();
-        setFromBitmap();
+        setFromPath();
+//        setFromBitmap();
 
     }
 
     private void setFromBitmap() {
         String path = Environment.getExternalStorageDirectory().getPath();
-        Bitmap bm = BitmapFactory.decodeFile(path + "canvas.png");
+        Bitmap bm = BitmapFactory.decodeFile(path + "tiger.jpg");
         imageView.setImageBitmap(bm);
     }
 
@@ -54,7 +54,7 @@ public class SrcAndScaleTypeActivity extends AppCompatActivity implements View.O
 
     private void setFromPath() {
         String path = Environment.getExternalStorageDirectory().getPath();
-        Uri uri = Uri.fromFile(new File(path + "/DCIM/Camera/github.png"));
+        Uri uri = Uri.fromFile(new File(path + "/tiger.jpg"));
         imageView.setImageURI(uri);
     }
 

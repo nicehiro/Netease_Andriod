@@ -3,6 +3,7 @@ package org.nicehiro.drawtest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -10,7 +11,7 @@ import android.view.View;
  * Created by root on 16-10-26.
  */
 
-public class BitmapActivity extends AppCompatActivity implements View.OnClickListener{
+public class BitmapActivity extends FragmentActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,6 +28,12 @@ public class BitmapActivity extends AppCompatActivity implements View.OnClickLis
         switch (v.getId()) {
             case R.id.bitmap_decode:
                 BitmapDecoder.decodeFile(this);
+                break;
+            case R.id.bitmap_selector:
+                startActivity(new Intent(this, SelectorActivity.class));
+                break;
+            case R.id.bitmap_level_list:
+                startActivity(new Intent(this, LevelListActivity.class));
                 break;
         }
     }
