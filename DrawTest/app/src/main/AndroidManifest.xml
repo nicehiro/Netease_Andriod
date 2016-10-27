@@ -33,6 +33,8 @@
         <activity android:name=".SelectorActivity"/>
 
         <activity android:name=".LevelListActivity"/>
+
+        <activity android:name=".CanvasActivity"/>
     </application>
 
 </manifest>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:padding="10dp"
+    tools:context=".CanvasActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="init"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/draw_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="line"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/draw_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/draw_rect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="rect"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/draw_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/draw_path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="path"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/custom_draw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="custom"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/canvas_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <org.nicehiro.drawtest.MsgImageView
+        android:id="@+id/custom_on_draw"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
