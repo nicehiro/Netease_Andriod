@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterpolatorActivity">
+
+    <Button
+        android:id="@+id/accelerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AccelerateDecelerate"/>
+
+    <ImageView
+        android:id="@+id/love1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/love"/>
+
+    <Button
+        android:id="@+id/overshoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Overshoot"/>
+
+    <ImageView
+        android:id="@+id/love2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/love"/>
+
+    <Button
+        android:id="@+id/cycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Cycle"/>
+
+    <ImageView
+        android:id="@+id/love3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/love"/>
+
+    <Button
+        android:id="@+id/anticipate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Anticipate"/>
+
+    <ImageView
+        android:id="@+id/love4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/love"/>
+
+</LinearLayout>

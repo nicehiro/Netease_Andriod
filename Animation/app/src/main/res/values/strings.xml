@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="tween">tween</string>>
+    <string name="set">set</string>
+    <string name="interpolator">interpolator</string>
+    <string name="location">location</string>
+
+    <string name="AlphaAnimation">alpha</string>
+    <string name="TranslateAnimation">translate</string>
+    <string name="ScaleAnimation">scale</string>
+    <string name="RotateAnimation">rotate</string>
+
+    <string name="love">love</string>
+
+    <string name="AccelerateDecelerate">acceleratedecelerate</string>
+    <string name="Overshoot">overshoot</string>
+    <string name="Cycle">cycle</string>
+    <string name="Anticipate">anticipate</string>
+</resources>
