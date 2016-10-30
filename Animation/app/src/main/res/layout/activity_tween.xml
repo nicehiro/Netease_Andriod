@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TweenActivity"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/DarkBackground">
 
     <LinearLayout
         android:id="@+id/row1"
@@ -43,6 +44,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/row2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/row1">
@@ -50,17 +52,45 @@
         <Button
             android:id="@+id/love_fly"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/love"/>
+
+        <Button
+            android:id="@+id/together"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/together"/>
+
+        <Button
+            android:id="@+id/timer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Timer"/>
+
+        <Button
+            android:id="@+id/calculator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Calculator"/>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row2" />
 
     <ImageView
         android:id="@+id/love"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/love"
+        android:layout_marginBottom="74dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="78dp" />
+        android:layout_toEndOf="@+id/number"
+        android:layout_marginStart="69dp" />
 </RelativeLayout>

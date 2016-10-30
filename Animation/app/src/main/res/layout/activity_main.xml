@@ -9,6 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:stretchColumns="*"
+    android:background="@color/DarkBackground"
     tools:context="org.nicehiro.animation.MainActivity">
 
     <TableRow>
@@ -19,10 +20,10 @@
             android:layout_height="wrap_content"
             android:text="@string/tween"/>
         <Button
-            android:id="@+id/set"
+            android:id="@+id/framAnim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/set"/>
+            android:text="@string/FrameAnim"/>
 
     </TableRow>
 
@@ -33,11 +34,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/interpolator"/>
+
         <Button
-            android:id="@+id/location"
+            android:id="@+id/object_anim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/location"/>
+            android:text="@string/ObjectAnim"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/layout_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/LayoutAnimator"/>
 
     </TableRow>
 </TableLayout>

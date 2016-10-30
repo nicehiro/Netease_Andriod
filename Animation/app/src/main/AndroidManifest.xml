@@ -17,6 +17,10 @@
         </activity>
 
         <activity android:name=".TweenActivity"></activity>
+        <activity android:name=".InterpolatorActivity"></activity>
+        <activity android:name=".FrameActivity"></activity>
+        <activity android:name=".ObjectAnimationActivity"></activity>
+        <activity android:name=".LayoutAnimatorActivity"></activity>
     </application>
 
 </manifest>
