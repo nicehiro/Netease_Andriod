@@ -2,6 +2,8 @@ package org.nicehiro.webbrowser;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
@@ -25,5 +27,11 @@ public class BrowserWebViewClient extends WebViewClient {
     @Override
     public void onPageFinished(WebView view, String url) {
         super.onPageFinished(view, url);
+    }
+
+    @Override
+    public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+        String data = "<html><body>404 not found</body></html>";
+        view.loadData(data, "text/html", null);
     }
 }
