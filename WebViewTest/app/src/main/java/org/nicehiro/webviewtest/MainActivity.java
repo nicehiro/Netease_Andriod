@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
     private class AppClient {
         @JavascriptInterface
         public void setActivity() {
+//            Uri uri = Uri.parse("http://baidu.com");
+//            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+
             Intent intent = new Intent(MainActivity.this, DemoActivity.class);
             startActivity(intent);
         }
