@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WebBrowser</string>
+
+    <string name="input_hint">Please Input a Link</string>
+    <string name="move_to">go</string>
+    <string name="refresh">refresh</string>
+    <string name="back">back</string>
+    <string name="forward">forward</string>
+</resources>
