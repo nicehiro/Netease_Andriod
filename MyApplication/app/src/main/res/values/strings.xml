@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ProjectOneTest</string>
+
+    <string name="test_1">用视图动画和属性动画分别实现一个先平移在缩放的动画，时间3秒。</string>
+    <string name="test_2">在《SurfaceView》章节DEMO的path render的例子里，在手按下屏幕时到手离开屏幕，绘制一个圆形图案，图案中心点为触摸点，现在需要增加一个小需求：在现有的圆形周围添加若干个小的圆形，请实现改需求。</string>
+    <string name="test_3">请使用ViewPager，Fragment，ListView，RecyclerView实现一个主页框架。</string>
+
+    <string name="animation">Veiw Animation</string>
+    <string name="animator">Object Animator</string>
+
+    <string name="backward"><![CDATA[<<<]]></string>
+    <string name="play"><![CDATA[|>]]></string>
+    <string name="pause"><![CDATA[||]]></string>
+    <string name="stop"><![CDATA[[]]]></string>
+    <string name="forward"><![CDATA[>>>]]></string>
+    <string name="loop">loop</string>
+    <string name="fps">fps</string>
+
+    <string name="title">Android Develop</string>
+    <string name="subtitle">I\'m a android developer and I love it</string>
+    <string name="time">21:38</string>
+
+    <string name="one">one</string>
+    <string name="two">two</string>
+    <string name="three">three</string>
+    <string name="four">four</string>
+
+    <string name="exchange">exchange</string>
+
+</resources>
