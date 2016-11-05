@@ -24,13 +24,13 @@ import java.util.List;
  * Created by root on 16-11-4.
  */
 
-public class ViewFragment extends Fragment {
+public class ListViewFragment extends Fragment {
 
     private static final String ARG_POSITION = "position";
     private int position;
 
-    public static ViewFragment newInstance(int position) {
-        ViewFragment viewFragment = new ViewFragment();
+    public static ListViewFragment newInstance(int position) {
+        ListViewFragment viewFragment = new ListViewFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_POSITION, position);
         viewFragment.setArguments(bundle);
@@ -58,8 +58,8 @@ public class ViewFragment extends Fragment {
 
         final List<Message> data = new ArrayList<>(20);
 
+        String time = "" + Calendar.getInstance().get(Calendar.HOUR) + ":" + Calendar.getInstance().get(Calendar.MINUTE);
         for (int i=0; i<20; i++) {
-            String time = "" + Calendar.getInstance().get(Calendar.HOUR) + ":" + Calendar.getInstance().get(Calendar.MINUTE);
 
             if (i % 2 == 0) {
                 data.add(new Message(

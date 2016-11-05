@@ -23,7 +23,11 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return ViewFragment.newInstance(position);
+        if (position == 1) {
+            return RecycleViewFragment.newInstance(position);
+        } else {
+            return ListViewFragment.newInstance(position);
+        }
     }
 
     @Override
