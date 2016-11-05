@@ -19,6 +19,7 @@
         <activity android:name=".MyAnimation"/>
         <activity android:name=".RenderPathActivity"/>
         <activity android:name=".ViewTestThree"/>
+        <activity android:name=".DemoActivity"/>
     </application>
 
 </manifest>

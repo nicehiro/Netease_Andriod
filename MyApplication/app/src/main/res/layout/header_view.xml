@@ -9,24 +9,28 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/one"
             android:layout_width="0dp"
             android:layout_weight="1"
             style="@style/TextViewStyle"
             android:text="@string/one" />
 
         <TextView
+            android:id="@+id/two"
             android:layout_width="0dp"
             android:layout_weight="1"
             style="@style/TextViewStyle"
             android:text="@string/two"/>
 
         <TextView
+            android:id="@+id/three"
             android:layout_width="0dp"
             android:layout_weight="1"
             style="@style/TextViewStyle"
             android:text="@string/three"/>
 
         <TextView
+            android:id="@+id/four"
             android:layout_width="0dp"
             android:layout_weight="1"
             style="@style/TextViewStyle"
@@ -35,8 +39,10 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/refresh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/gray"
         android:text="@string/exchange"/>
 
 </LinearLayout>

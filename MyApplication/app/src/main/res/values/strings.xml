@@ -27,4 +27,8 @@
 
     <string name="exchange">exchange</string>
 
+    <string name="footer">Powered By hiro</string>
+
+    <string name="demo">see I intent a activity</string>
+
 </resources>

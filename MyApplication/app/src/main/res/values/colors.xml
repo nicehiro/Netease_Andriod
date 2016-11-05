@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#795548</color>
-    <color name="colorPrimaryDark">#795548</color>
+    <color name="colorPrimary">#9E9E9E</color>
+    <color name="colorPrimaryDark">#9E9E9E</color>
     <color name="colorAccent">#FF9100</color>
 
     <color name="buttonColor">#424242</color>
     <color name="white">#FFFFFF</color>
 
-    <color name="view_pager">#795548</color>
-    <color name="view_background">#FFB300</color>
+    <color name="view_pager">#9E9E9E</color>
+    <color name="view_background">#424242</color>
+
+    <color name="gray">#616161</color>
 </resources>
