@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FileStoreTest</string>
+
+    <string name="button1">run RAW read&amp;write</string>
+    <string name="button2">run Asset read&amp;write</string>
+    <string name="button3">run internal storage file</string>
+    <string name="button4">run internal storage cache</string>
+    <string name="button5">run extend storage</string>
+    <string name="button6">run external storage</string>
+
+    <string name="read_from_row">read from row</string>
+    <string name="read_from_asset">read from asset</string>
+
+    <string name="login_name">Your user name</string>
+    <string name="loginpasswd">Yout Password</string>
+
+    <string name="remember">remember password</string>
+    <string name="login">login</string>
+
+    <string name="read_from_internal_cache">read from internal cache</string>
+
+    <string name="read_and_write_extend_file">read and write extend file</string>
+    <string name="read_and_write_extend_cache">read and write extend cache</string>
+
+    <string name="read_and_write_external_storage">read and write external storage</string>
+
+</resources>

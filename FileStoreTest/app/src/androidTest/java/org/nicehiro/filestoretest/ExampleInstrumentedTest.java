@@ -1,4 +1,4 @@
-package org.nicehiro.projectonetest;
+package org.nicehiro.filestoretest;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("org.nicehiro.projectonetest", appContext.getPackageName());
+        assertEquals("org.nicehiro.filestoretest", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package org.nicehiro.projectonetest;
+package org.nicehiro.filestoretest;
 
 import org.junit.Test;
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/readFromRow"
+        android:layout_marginTop="20dp"
+        style="@style/ButtonStyle"
+        android:text="@string/read_from_row" />
+
+    <Button
+        android:id="@+id/readFromAsset"
+        style="@style/ButtonStyle"
+        android:text="@string/read_from_asset" />
+
+    <ListView
+        android:id="@+id/listview_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
