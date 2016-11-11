@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SQLiteTest</string>
+
+    <string name="button1">Insert Message</string>
+    <string name="button2">Remove Message</string>
+    <string name="button3">Update Message</string>
+    <string name="button4">Search Message</string>
+</resources>
