@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OrmTest</string>
+    
+    <string name="start_sql">SQL 读写</string>
+    <string name="start_orm">ORM 读写</string>
+
+    <string name="sql_insert">SQL 插入</string>
+    <string name="sql_query">SQL 查询</string>
+</resources>
