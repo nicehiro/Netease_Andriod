@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name_desc"
+        android:layout_alignParentLeft="true"
+        android:text="@string/name"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_toRightOf="@id/tv_name_desc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_phone_desc"
+        android:layout_below="@id/tv_name_desc"
+        android:text="@string/phone"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_toRightOf="@id/tv_phone_desc"
+        android:layout_below="@id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_email_desc"
+        android:layout_below="@id/tv_phone_desc"
+        android:text="@string/email"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_below="@id/et_phone"
+        android:layout_toRightOf="@id/tv_email_desc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/save_contact"
+        android:layout_below="@id/et_email"
+        android:text="@string/save_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

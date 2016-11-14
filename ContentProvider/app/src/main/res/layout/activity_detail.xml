@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name_desc"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@id/tv_name_desc"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_phone_desc"
+        android:layout_below="@id/tv_name_desc"
+        android:gravity="center"
+        android:text="@string/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/tv_phone_desc"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_email_desc"
+        android:layout_below="@id/tv_phone_desc"
+        android:gravity="center"
+        android:text="@string/email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_toRightOf="@id/tv_email_desc"
+        android:layout_below="@id/tv_phone"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/edit_contact"
+        android:text="@string/edit_contact"
+        android:layout_below="@id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/delete_contact"
+        android:text="@string/delete_contact"
+        android:layout_below="@id/edit_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
