@@ -24,6 +24,10 @@ public class MyAdapter extends BaseAdapter {
         this.contactList = contactList;
     }
 
+    public void setContactList(List<Contact> contactList) {
+        this.contactList = contactList;
+    }
+
     @Override
     public int getCount() {
         return contactList == null ? 0 : contactList.size();
@@ -31,7 +35,7 @@ public class MyAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return contactList.get(i);
+        return (Integer) i;
     }
 
     @Override

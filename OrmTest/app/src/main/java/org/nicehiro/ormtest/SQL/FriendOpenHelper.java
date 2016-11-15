@@ -26,7 +26,7 @@ public class FriendOpenHelper extends SQLiteOpenHelper {
         public static final String F_ID = "id";
         public static final String F_UID = "uid";
         public static final String F_YID = "yid";
-        public static final String F_NICKNAME = "nicename";
+        public static final String F_NICKNAME = "nickname";
         public static final String F_GENDER = "gender";
         public static final String F_MOBILE = "mobile";
         public static final String F_PHOTOURL = "photourl";
@@ -36,10 +36,12 @@ public class FriendOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String CONTACT_CREATE =
                 "create table if not exists " + T_CONTACT +
-                        "(" + DB_FIELD_CONTACT.F_ID + " integer auto_increment, " +
+                        " (" + DB_FIELD_CONTACT.F_ID + " integer auto_increment, " +
                         DB_FIELD_CONTACT.F_UID + " varchar(16) not null ," +
-                        DB_FIELD_CONTACT.F_YID + " varchar(16), nickname varchar(16), " +
-                        DB_FIELD_CONTACT.F_GENDER + " integer, mobile varchar(16), " +
+                        DB_FIELD_CONTACT.F_YID + " varchar(16), " +
+                        DB_FIELD_CONTACT.F_NICKNAME + " varchar(16), " +
+                        DB_FIELD_CONTACT.F_GENDER + " integer, " +
+                        DB_FIELD_CONTACT.F_MOBILE + " varchar(16), " +
                         DB_FIELD_CONTACT.F_PHOTOURL + " varchar(32))";
 
         sqLiteDatabase.execSQL(CONTACT_CREATE);
@@ -50,7 +52,7 @@ public class FriendOpenHelper extends SQLiteOpenHelper {
 
     }
 
-    private List<Contact> queryTimeLine (int offset, int limit) {
+    public List<Contact> queryTimeLine (int offset, int limit) {
         String selectSQL = String.format("select id, uid, yid, gender, " +
             "mobile, photourl from contacts " +
             "order by id DESC limit %d, %d", offset, limit);
@@ -65,7 +67,7 @@ public class FriendOpenHelper extends SQLiteOpenHelper {
                 contact.setId(cursor.getInt(column ++));
                 contact.setuId(cursor.getString(column ++));
                 contact.setyId(cursor.getString(column ++));
-                contact.setGender(cursor.getShort(column ++));
+                contact.setGender(cursor.getInt(column ++));
                 contact.setMobile(cursor.getString(column ++));
                 contact.setPhotoUrl(cursor.getString(column));
 
@@ -79,7 +81,7 @@ public class FriendOpenHelper extends SQLiteOpenHelper {
         }
     }
 
-    private void insertOrUpdateContact (Contact contact) {
+    public void insertOrUpdateContact (Contact contact) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("uid", contact.getuId());
         contentValues.put("yid", contact.getyId());
