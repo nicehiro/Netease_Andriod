@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/orm_insert"
+        style="@style/ButtonStyle"
+        android:text="@string/orm_insert" />
+
+    <Button
+        android:id="@+id/orm_query"
+        style="@style/ButtonStyle"
+        android:text="@string/orm_query" />
+
+    <ListView
+        android:id="@+id/orm_listview_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

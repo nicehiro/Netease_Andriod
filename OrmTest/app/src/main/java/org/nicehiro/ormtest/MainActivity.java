@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.nicehiro.ormtest.SQL.SQLActivity;
+import org.nicehiro.ormtest.ormsql.OrmSqlActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.startORM:
+                intent = new Intent(this, OrmSqlActivity.class);
+                startActivity(intent);
                 break;
         }
     }

@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".SQL.SQLActivity"/>
+        <activity android:name=".ormsql.OrmSqlActivity"/>
     </application>
 
 </manifest>

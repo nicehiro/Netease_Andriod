@@ -6,4 +6,7 @@
 
     <string name="sql_insert">SQL 插入</string>
     <string name="sql_query">SQL 查询</string>
+
+    <string name="orm_insert">ORM 插入</string>
+    <string name="orm_query">ORM 查询</string>
 </resources>
