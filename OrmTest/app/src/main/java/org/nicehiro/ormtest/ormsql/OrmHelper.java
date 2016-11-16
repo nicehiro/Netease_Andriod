@@ -22,7 +22,7 @@ public class OrmHelper {
 
     public OrmHelper(Context context) {
         MySqlOpenHelper openHelper = new MySqlOpenHelper(context, "ORMDB");
-        daoMaster = new DaoMaster(openHelper.getWritableDb());
+        daoMaster = new DaoMaster(openHelper.getWritableDatabase());
         daoSession = daoMaster.newSession();
     }
 

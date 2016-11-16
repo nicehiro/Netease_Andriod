@@ -14,7 +14,7 @@ import org.greenrobot.greendao.annotation.Property;
 public class Contact {
 
     @Id(autoincrement = true)
-    private long id;
+    private Long id;
 
     @NotNull
     private String uId;
@@ -26,8 +26,8 @@ public class Contact {
     @Property(nameInDb = "nickname")
     private String name;
 
-    @Generated(hash = 2087164896)
-    public Contact(long id, @NotNull String uId, String yId, int gender,
+    @Generated(hash = 1768738186)
+    public Contact(Long id, @NotNull String uId, String yId, int gender,
             String mobile, String photourl, String name) {
         this.id = id;
         this.uId = uId;
@@ -42,60 +42,36 @@ public class Contact {
     public Contact() {
     }
 
-    public long getId() {
-        return id;
+    public String getName() {
+        return this.name;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getuId() {
-        return uId;
-    }
-
-    public void setuId(String uId) {
-        this.uId = uId;
-    }
-
-    public String getyId() {
-        return yId;
-    }
-
-    public void setyId(String yId) {
-        this.yId = yId;
-    }
-
-    public int getGender() {
-        return gender;
-    }
-
-    public void setGender(int gender) {
-        this.gender = gender;
-    }
-
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPhotourl() {
-        return photourl;
+        return this.photourl;
     }
 
     public void setPhotourl(String photourl) {
         this.photourl = photourl;
     }
 
-    public String getName() {
-        return name;
+    public String getMobile() {
+        return this.mobile;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public int getGender() {
+        return this.gender;
+    }
+
+    public void setGender(int gender) {
+        this.gender = gender;
     }
 
     public String getYId() {
@@ -112,5 +88,13 @@ public class Contact {
 
     public void setUId(String uId) {
         this.uId = uId;
+    }
+
+    public Long getId() {
+        return this.id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

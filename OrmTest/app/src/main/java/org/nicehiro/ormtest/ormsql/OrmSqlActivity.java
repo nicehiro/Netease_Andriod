@@ -41,8 +41,8 @@ public class OrmSqlActivity extends AppCompatActivity implements View.OnClickLis
 
         for (int i=0; i<50; i++) {
             Contact contact = new Contact();
-            contact.setuId(Util.RandomString(8));
-            contact.setyId(Util.RandomString(8));
+            contact.setUId(Util.RandomString(8));
+            contact.setYId(Util.RandomString(8));
             contact.setName(Util.RandomString(6));
             contact.setGender(i%2);
             contact.setMobile(Util.RandomNumber(13));
