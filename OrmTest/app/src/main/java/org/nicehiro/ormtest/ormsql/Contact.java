@@ -14,7 +14,7 @@ import org.greenrobot.greendao.annotation.Property;
 public class Contact {
 
     @Id(autoincrement = true)
-    private Long id;
+    private long id;
 
     @NotNull
     private String uId;
@@ -26,8 +26,8 @@ public class Contact {
     @Property(nameInDb = "nickname")
     private String name;
 
-    @Generated(hash = 1768738186)
-    public Contact(Long id, @NotNull String uId, String yId, int gender,
+    @Generated(hash = 2087164896)
+    public Contact(long id, @NotNull String uId, String yId, int gender,
             String mobile, String photourl, String name) {
         this.id = id;
         this.uId = uId;
@@ -90,11 +90,11 @@ public class Contact {
         this.uId = uId;
     }
 
-    public Long getId() {
+    public long getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

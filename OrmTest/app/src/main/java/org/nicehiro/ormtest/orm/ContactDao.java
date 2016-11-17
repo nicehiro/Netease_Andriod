@@ -24,7 +24,7 @@ public class ContactDao extends AbstractDao<Contact, Long> {
      * Can be used for QueryBuilder and for referencing column names.
     */
     public static class Properties {
-        public final static Property Id = new Property(0, Long.class, "id", true, "_id");
+        public final static Property Id = new Property(0, long.class, "id", true, "_id");
         public final static Property UId = new Property(1, String.class, "uId", false, "U_ID");
         public final static Property YId = new Property(2, String.class, "yId", false, "Y_ID");
         public final static Property Gender = new Property(3, int.class, "gender", false, "GENDER");
@@ -46,7 +46,7 @@ public class ContactDao extends AbstractDao<Contact, Long> {
     public static void createTable(Database db, boolean ifNotExists) {
         String constraint = ifNotExists? "IF NOT EXISTS ": "";
         db.execSQL("CREATE TABLE " + constraint + "\"CONTACT\" (" + //
-                "\"_id\" INTEGER PRIMARY KEY AUTOINCREMENT ," + // 0: id
+                "\"_id\" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL ," + // 0: id
                 "\"U_ID\" TEXT NOT NULL ," + // 1: uId
                 "\"Y_ID\" TEXT," + // 2: yId
                 "\"GENDER\" INTEGER NOT NULL ," + // 3: gender
@@ -64,11 +64,7 @@ public class ContactDao extends AbstractDao<Contact, Long> {
     @Override
     protected final void bindValues(DatabaseStatement stmt, Contact entity) {
         stmt.clearBindings();
- 
-        Long id = entity.getId();
-        if (id != null) {
-            stmt.bindLong(1, id);
-        }
+        stmt.bindLong(1, entity.getId());
         stmt.bindString(2, entity.getUId());
  
         String yId = entity.getYId();
@@ -96,11 +92,7 @@ public class ContactDao extends AbstractDao<Contact, Long> {
     @Override
     protected final void bindValues(SQLiteStatement stmt, Contact entity) {
         stmt.clearBindings();
- 
-        Long id = entity.getId();
-        if (id != null) {
-            stmt.bindLong(1, id);
-        }
+        stmt.bindLong(1, entity.getId());
         stmt.bindString(2, entity.getUId());
  
         String yId = entity.getYId();
@@ -127,13 +119,13 @@ public class ContactDao extends AbstractDao<Contact, Long> {
 
     @Override
     public Long readKey(Cursor cursor, int offset) {
-        return cursor.isNull(offset + 0) ? null : cursor.getLong(offset + 0);
+        return cursor.getLong(offset + 0);
     }    
 
     @Override
     public Contact readEntity(Cursor cursor, int offset) {
         Contact entity = new Contact( //
-            cursor.isNull(offset + 0) ? null : cursor.getLong(offset + 0), // id
+            cursor.getLong(offset + 0), // id
             cursor.getString(offset + 1), // uId
             cursor.isNull(offset + 2) ? null : cursor.getString(offset + 2), // yId
             cursor.getInt(offset + 3), // gender
@@ -146,7 +138,7 @@ public class ContactDao extends AbstractDao<Contact, Long> {
      
     @Override
     public void readEntity(Cursor cursor, Contact entity, int offset) {
-        entity.setId(cursor.isNull(offset + 0) ? null : cursor.getLong(offset + 0));
+        entity.setId(cursor.getLong(offset + 0));
         entity.setUId(cursor.getString(offset + 1));
         entity.setYId(cursor.isNull(offset + 2) ? null : cursor.getString(offset + 2));
         entity.setGender(cursor.getInt(offset + 3));
