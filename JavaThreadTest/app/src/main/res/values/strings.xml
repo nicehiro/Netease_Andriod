@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JavaThreadTest</string>
+
+    <string name="text1">餐厅开门</string>
+    <string name="text2">餐厅关门</string>
+    <string name="text3">客人来了</string>
+</resources>
