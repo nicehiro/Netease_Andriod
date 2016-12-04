@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AsyncTask</string>
+    <string name="button0">download_0</string>
+    <string name="button1">download_1</string>
+    <string name="button2">download_2</string>
+    <string name="button3">download_3</string>
+    <string name="button4">download_4</string>
+</resources>
