@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoderTest</string>
+    <string name="button0">执行后台任务</string>
+    <string name="button1">取消加载</string>
+    <string name="button2">取消后台任务</string>
+    <string name="button3">下一页</string>
+</resources>
