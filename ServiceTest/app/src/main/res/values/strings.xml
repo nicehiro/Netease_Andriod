@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ServiceTest</string>
+    <string name="button1">Start Service</string>
+    <string name="button2">Stop Service</string>
+    <string name="button3">Bind Service</string>
+    <string name="button4">Unbind Service</string>
+    <string name="button5">Start Another Activity</string>
+
+    <string name="another">Unbind Service</string>
+</resources>
