@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/send_myobserver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_myobserver_event"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/send_event0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event0"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/send_event1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event1"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/send_event2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event2"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/send_event3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event3"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/next_page_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/next_page"/>
+
+</LinearLayout>

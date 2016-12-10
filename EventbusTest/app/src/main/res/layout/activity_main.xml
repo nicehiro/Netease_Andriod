@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.nicehiro.eventbustest.MainActivity">
+
+    <Button
+        android:id="@+id/send_event4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event4"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/remove_stricky_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remove_sticky_event"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/next_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next_page"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

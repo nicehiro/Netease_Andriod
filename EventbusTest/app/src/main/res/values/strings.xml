@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EventbusTest</string>
+
+    <string name="myobserver_event">自定义监听者模式</string>
+    <string name="send_myobserver_event">发送自定义监听者事件</string>
+
+    <string name="next_page">下一页</string>
+
+    <string name="event0">事件0</string>
+    <string name="event1">事件1</string>
+    <string name="event2">事件2</string>
+    <string name="event3">事件3</string>
+    <string name="event4">事件4</string>
+
+    <string name="remove_sticky_event">移除sticky event</string>
+    <string name="otto_event_0">otto 事件0</string>
+</resources>
