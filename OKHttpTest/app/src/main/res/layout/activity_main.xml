@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.nicehiro.okhttptest.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/do_get"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button1"/>
+
+        <Button
+            android:id="@+id/do_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button2"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/do_async"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button3"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
