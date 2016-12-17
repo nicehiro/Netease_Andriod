@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+
+    <string name="btn_find">查询本地歌曲</string>
+    <string name="tv_time">Time</string>
+    <string name="tv_title">Title</string>
+    <string name="tv_singer">Singer</string>
+</resources>
