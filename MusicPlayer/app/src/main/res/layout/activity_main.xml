@@ -11,11 +11,82 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.nicehiro.musicplayer.MainActivity">
 
-    <Button
-        android:id="@+id/btn_find"
+    <RelativeLayout
+        android:id="@+id/music_controller"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_find"/>
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/music_album"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/music_title"
+            android:text="@string/tv_title"
+            android:layout_toRightOf="@id/music_album"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/music_artist"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_toRightOf="@id/music_album"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_singer"
+            android:textSize="16sp"/>
+        <ProgressBar
+            android:id="@+id/music_progreess_bar"
+            android:layout_toRightOf="@id/music_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+        <TextView
+            android:id="@+id/music_duration"
+            android:text="@string/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/img_music_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/img_music_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/play"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/img_music_next"/>
+
+    </RelativeLayout>
 
     <ListView
         android:id="@+id/music_list"

@@ -5,4 +5,6 @@
     <string name="tv_time">Time</string>
     <string name="tv_title">Title</string>
     <string name="tv_singer">Singer</string>
+
+    <string name="tv_song">Music</string>
 </resources>

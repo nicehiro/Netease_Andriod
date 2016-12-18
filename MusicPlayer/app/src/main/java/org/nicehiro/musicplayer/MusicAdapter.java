@@ -45,9 +45,9 @@ public class MusicAdapter extends BaseAdapter {
             viewHolder = new ViewHolder();
             convertView = LayoutInflater.from(context).inflate
                     (R.layout.item_music_list, null);
-            viewHolder.musicArtist = (TextView) convertView.findViewById(R.id.music_artist);
-            viewHolder.musicDuration = (TextView) convertView.findViewById(R.id.music_duration);
-            viewHolder.musicTitle = (TextView) convertView.findViewById(R.id.music_title);
+            viewHolder.musicArtist = (TextView) convertView.findViewById(R.id.list_music_artist);
+            viewHolder.musicDuration = (TextView) convertView.findViewById(R.id.list_music_duration);
+            viewHolder.musicTitle = (TextView) convertView.findViewById(R.id.list_music_title);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -68,7 +68,7 @@ public class MusicAdapter extends BaseAdapter {
         private TextView musicDuration;
     }
 
-    private static String formatTime(Long time) {
+    public static String formatTime(Long time) {
         String min = time / (1000 * 60) + "";
         String sec = time % (1000 * 60) + "";
 
