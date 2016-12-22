@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/window_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/move_up"
+        style="@style/ButtonStyle"
+        android:text="@string/up"/>
+    <Button
+        android:id="@+id/move_down"
+        style="@style/ButtonStyle"
+        android:text="@string/down"/>
+    <Button
+        android:id="@+id/move_left"
+        style="@style/ButtonStyle"
+        android:text="@string/left"/>
+    <Button
+        android:id="@+id/move_right"
+        style="@style/ButtonStyle"
+        android:text="@string/right"/>
+    <Button
+        android:id="@+id/close"
+        style="@style/ButtonStyle"
+        android:text="@string/close"/>
+
+</LinearLayout>

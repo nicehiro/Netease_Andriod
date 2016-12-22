@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ViewIMP</string>
+
+    <string name="button1">Show decor foreground</string>
+    <string name="button2">Hide decor foreground</string>
+    <string name="button3">Add view to decor</string>
+    <string name="button4">remove view from decor</string>
+    <string name="button5">Simple window</string>
+    <string name="button6">Popup window</string>
+
+    <string name="up">up</string>
+    <string name="down">down</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    <string name="close">close</string>
+</resources>
