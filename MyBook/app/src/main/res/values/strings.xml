@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyBook</string>
+    
+    <string name="title_home">我的藏书</string>
+
+    <string name="tab_book">我的藏书</string>
+    <string name="tab_search">扫码藏书</string>
+    <string name="tab_analysz">藏书统计</string>
+
+    <string name="book_detail">书籍详情</string>
+
+    <string name="summary_title">内容简介</string>
+
+    <string name="scan_text">将条形码放入框内</string>
+</resources>

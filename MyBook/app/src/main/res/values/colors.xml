@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="text_color_primary">#616161</color>
+    <color name="text_color_dark">#424242</color>
+    <color name="star_color">#E0E0E0</color>
+
+    <color name="black">#212121</color>
+
+    <color name="sider">#F2F4F7</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>
