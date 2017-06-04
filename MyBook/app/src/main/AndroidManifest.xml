@@ -13,8 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--android:theme="@style/AppTheme.NoActionBar.FullScreen">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,14 +23,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity">
+        <!--<activity android:name=".MainActivity">-->
 
-        </activity>
+        <!--</activity>-->
 
         <activity android:name=".BookDetail"
             android:parentActivityName=".MainActivity"/>
 
         <activity android:name=".MipcaActivityCapture"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".SearchViewResult"
             android:parentActivityName=".MainActivity"/>
     </application>
 

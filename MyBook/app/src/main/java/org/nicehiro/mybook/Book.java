@@ -20,7 +20,9 @@ public class Book {
     private String image;
 
     public String getTags() {
-        return tags.get(tags.size()-1).getTitle();
+         if (tags.size() == 0) {
+             return "null";
+         } else return tags.get(tags.size()-1).getTitle();
     }
 
     private ArrayList<Tag> tags;

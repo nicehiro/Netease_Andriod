@@ -1,10 +1,15 @@
 package org.nicehiro.mybook;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.support.annotation.NonNull;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -46,8 +51,25 @@ public class MainActivity extends AppCompatActivity {
             bookFragment = new BookFragment();
         }
         searchFragment = new SearchFragment();
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(MainActivity.this, new String[] {Manifest.permission.CAMERA}, 1);
+        }
         analyszFragment = new AnalyszFragment();
         initView();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case 1:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Toast.makeText(this, "授权成功", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "授权失败", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            default:
+        }
     }
 
     @Override

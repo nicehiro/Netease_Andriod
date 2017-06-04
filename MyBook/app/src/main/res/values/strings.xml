@@ -12,4 +12,15 @@
     <string name="summary_title">内容简介</string>
 
     <string name="scan_text">将条形码放入框内</string>
+
+    <string name="marked">已收藏</string>
+    <string name="mark">收藏</string>
+
+    <string name="search">查找</string>
+
+    <string name="search_hint">输入书名</string>
+
+    <string name="commit">保存</string>
+
+    <string name="comment">Comments</string>
 </resources>

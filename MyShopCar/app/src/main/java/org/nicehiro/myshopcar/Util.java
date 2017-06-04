@@ -1,5 +1,9 @@
 package org.nicehiro.myshopcar;
 
+import android.content.Context;
+import android.os.Environment;
+
+import java.io.File;
 import java.util.Random;
 
 /**
@@ -31,5 +35,19 @@ public class Util {
         }
 
         return new String(numbers);
+    }
+
+    public static void cleanAppCache(Context context) {
+        delectFilesDirectory(context.getCacheDir());
+
+        delectFilesDirectory(context.getExternalCacheDir());
+    }
+
+    private static void delectFilesDirectory(File directory) {
+        if (directory != null && directory.exists()) {
+            for (File file : directory.listFiles()) {
+                file.delete();
+            }
+        }
     }
 }

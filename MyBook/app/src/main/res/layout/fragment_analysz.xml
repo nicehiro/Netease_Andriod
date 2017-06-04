@@ -1,19 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anlyse_manager"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/analysz"/>
+        android:background="@color/colorPrimaryDark"
+        android:title="@string/tab_analysz"
+        android:titleTextColor="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tab_analysz"
+            android:textSize="20sp"/>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="@string/search_hint">
+
+        </android.support.v7.widget.SearchView>
+
+    </android.support.v7.widget.Toolbar>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/tab_analysz"
-        android:layout_marginTop="2dp"/>
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/book_total_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/book_marked_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/book_not_mark_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/classify_by_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    
+    <org.nicehiro.mybook.PieView
+        android:id="@+id/pieview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/price_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextPrimeryStyle"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/publisher_max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextPrimeryStyle"
+        android:layout_margin="10dp"/>
 
 </LinearLayout>

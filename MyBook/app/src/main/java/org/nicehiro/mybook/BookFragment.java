@@ -133,17 +133,20 @@ public class BookFragment extends Fragment{
 
                 ContentValues values = new ContentValues();
 
-                addToList(list, book);
+                boolean isInList = addToList(list, book);
 
                 startDetail(book);
 
-                if (book.getIsbn13() != null) {
+                if (book.getIsbn13() != null && !isInList) {
                     db.beginTransaction();
                     try {
                         values.put("title", book.getTitle());
                         values.put("author", ArrayListToString.listToString(book.getAuthor()));
                         values.put("image", book.getImage());
                         values.put("isbn13", book.getIsbn13());
+                        values.put("tags", book.getTags());
+                        values.put("publisher", book.getPublisher());
+                        values.put("price", book.getPrice());
                         values.put("bookmark", 0);
                         Log.d(TAG, book.getIsbn13());
                         db.insert("Book", null, values);
@@ -166,13 +169,15 @@ public class BookFragment extends Fragment{
         });
     }
 
-    private void addToList(ArrayList<Book> list, Book book) {
+    private boolean addToList(ArrayList<Book> list, Book book) {
         for (int i=0; i<list.size(); i++) {
-            if ((book.getTitle().equals(list.get(i).getTitle()) && ArrayListToString.listToString(book.getAuthor()).equals(ArrayListToString.listToString(list.get(i).getAuthor())))) {
-                return;
+            if ((book.getTitle().equals(list.get(i).getTitle()))) {
+                // list 中已经有了该 Book
+                return true;
             }
         }
         list.add(book);
+        return false;
     }
 
     private void startDetail(Book book) {
